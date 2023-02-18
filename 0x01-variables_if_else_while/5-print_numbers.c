@@ -2,14 +2,14 @@
 /**
  * main - entry point
  *
- * Return: alway returns 0
+ * Return: alway 0 (success)
  *
  */
 int main(void)
 {
-	int a = 0;
+	int;
 
-	for (; a < 10 ; a++)
+	for (a = 0; a < 10; a++)
 	{
 		printf("%d\n", a);
 	}
