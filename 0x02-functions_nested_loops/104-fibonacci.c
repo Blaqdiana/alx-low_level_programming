@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
- * numLength - prints the first 98 fibonacci numbers
- * starting with 1 and 2
- * Return: void
+ *  *main - prints the first 98 fibonaci sequences
+ *  Return: 0
  */
 
 int main(void)
@@ -25,5 +24,6 @@ int main(void)
 	}
 
 	printf("\n");
+
 	return (0);
 }
