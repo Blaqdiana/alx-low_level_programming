@@ -2,7 +2,9 @@
 /**
  * print_rev - prints a string in reverse.
  *
- * @s: string to print
+ * @s: *s and function parameter string
+ * 
+ * return: void
  */
 void rev_string(char *s)
 {
