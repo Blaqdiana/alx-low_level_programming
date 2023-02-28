@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * print_rev - prints a string in reverse.
+ * rev_string - prints a string in reverse.
  *
  * @s: *s and function parameter string
- * 
+ *
  * return: void
  */
 void rev_string(char *s)
@@ -21,5 +21,4 @@ void rev_string(char *s)
 		*(s + i - k) = *(s + (k - 1));
 		*(s + (k - 1)) = q;
 	}
-}
 }
