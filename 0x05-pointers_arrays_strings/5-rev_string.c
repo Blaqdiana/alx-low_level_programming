@@ -4,21 +4,23 @@
  *
  * @s: *s and function parameter string
  *
- * return: void
+ * return: 0
  */
 void rev_string(char *s)
 {
-	{
-	int i, k;
-	char q;
+	int len, i, half;
+	char temp;
 
+	for (len = 0; s[len] != '\0'; len++)
+	;
 	i = 0;
-	while (*(s + i) != '\0')
-		i++;
-	for (k = 1; k <= (i / 2); k++)
+	half = len / 2;
+
+	while (half--)
 	{
-		q = *(s + i - k);
-		*(s + i - k) = *(s + (k - 1));
-		*(s + (k - 1)) = q;
+		temp = s[len - i - 1];
+		s[len - i - 1] = s[i];
+		s[i] = temp;
+		i++;
 	}
 }
