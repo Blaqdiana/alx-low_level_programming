@@ -5,7 +5,8 @@
  * @s1: first character to compare.
  * @s2: second character to compare
  *
- * Return: dest
+ * Return: 0 if s1 == s2
+ * 	return another number if s1 < s2.
  */
 int _strcmp(char *s1, char *s2)
 {
