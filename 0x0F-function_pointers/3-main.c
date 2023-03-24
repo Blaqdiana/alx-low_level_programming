@@ -10,23 +10,34 @@
   *
   * Return: always 0
   */
-int main(int ac, char **av)
+int main(int argc, char *argv[])
 {
-	int (*operator)(int, int);
+	int a, b;
+	int (*operation)(int, int);
 
-	if (ac != 4)
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	operator = get_op_func(av[2]);
-	if (!operator)
+	if (argv[2][1])
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	printf("%d\n", operator(atoi(av[1]), atoi(av[3])));
+	operation = get_op_func(argv[2]);
+
+	if (operation == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+
+	printf("%d\n", operation(a, b));
 	return (0);
 }
