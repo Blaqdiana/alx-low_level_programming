@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add-nodeint - Adds a new node at the beginning of a list.
+ * add_nodeint - Adds a new node at the beginning of a list.
  *
  * @head: Pointer to the first element list.
  * @n: Number to enter in the new mode.
