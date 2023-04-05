@@ -2,22 +2,14 @@
 #include <stdio.h>
 
 /**
- * print_listint_safe - Prints a safe linked listint with a loop.
+ * looped_listint_len - Counts the number of unique nodes in a
+ *		looped listint_t.
  *
- * @head: Pointer to head.
- *
- * Return: 
- */
-
-/**
- * looped_listint_len - Counts the number of unique nodes
- *                      in a looped listint_t linked list.
  * @head: A pointer to head.
  *
  * Return: 0 or the number of unique nodes in the list.
  */
-size_t looped_listint_len(const listint_t *head);
-size_t print_listint_safe(const listint_t *head);
+size_t looped_listint_len(const listint_t *head)
 {
 	const listint_t *tortoise, *hare;
 	size_t nodes = 1;
@@ -57,6 +49,13 @@ size_t print_listint_safe(const listint_t *head);
 	return (0);
 }
 
+/**
+ * print_listint_safe - Prints a safe linked listint with a loop.
+ *
+ * @head: Pointer to head.
+ *
+ * Return: Number of nodes.
+ */
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t nodes, id = 0;
